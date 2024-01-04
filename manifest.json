@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "author": "Pavel Hajek",
+  "name": "quickfilter-kbd",
+  "description": "Keyboard shortcuts for Quick Filter toolbar",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{3c4f38c0-cc71-4fed-8518-823a59badd25}",
+      "strict_min_version": "110.0a1"
+    }
+  },
+  "permissions": [
+    "messagesRead"
+  ],
+  "commands": {
+      "select-by-author": {
+         "suggested_key": {
+            "default": "Alt+Shift+A"
+         },
+         "description": "Filter by author"
+      },
+      "select-by-subject": {
+          "suggested_key": {
+            "default": "Alt+Shift+S"
+          },
+          "description": "Filter by subject"
+          },
+      "select-by-recipients": {
+          "suggested_key": {
+            "default": "Alt+Shift+R"
+          },
+          "description": "Filter by recipients"
+          }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+      "page": "options.html",
+      "browser_style": false
+  }
+}
