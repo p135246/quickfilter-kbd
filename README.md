@@ -32,8 +32,7 @@ Install directly from the [Thunderbird Add-Ons repository](https://addons.thunde
    ```
     /
      ├── background.js
-     ├── manifest.json
-     └── options.html
+     └── manifest.json
    ```
    and rename it to `quickfilter-kbd.xpi`.
 
